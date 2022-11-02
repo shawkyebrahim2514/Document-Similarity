@@ -21,10 +21,6 @@ void StringSet::addString(const std::string &word) {
     this->container.insert(word);
 }
 
-void StringSet::removeString(const std::string &word) {
-    this->container.erase(word);
-}
-
 void StringSet::clear() {
     this->container.clear();
 }

@@ -1,12 +1,23 @@
 #include <fstream>
 #include "Application.h"
 
+void Application::showWindow() {
+    print("What do you want to do?");
+    std::cout << "1- Load a document from file\n";
+    std::cout << "2- Load a paragraph to the document\n";
+    std::cout << "3- Print a document words\n";
+    std::cout << "4- Clear a document words\n";
+    std::cout << "5- Print the words of union of two documents\n";
+    std::cout << "6- Print the words of intersection of documents\n";
+    std::cout << "7- Calculate the similarity of two documents\n";
+}
+
 void Application::run() {
     showWindow();
     int choice;
     std::cout << "Enter your choice: ";
     std::cin >> choice;
-    while (choice < 1 || choice > 6){
+    while (choice < 1 || choice > 7){
         std::cout << "Enter a correct choice: ";
         std::cin >> choice;
     }
@@ -21,12 +32,15 @@ void Application::run() {
             printDocument();
             break;
         case 4:
-            printUnionDocuments();
+            clearDocument();
             break;
         case 5:
-            printIntersectDocuments();
+            printUnionDocuments();
             break;
         case 6:
+            printIntersectDocuments();
+            break;
+        case 7:
             calculateSimilarity();
             break;
     }
@@ -35,16 +49,6 @@ void Application::run() {
     std::cout << "Enter your choice:";
     std::cin >> state;
     if(state == "y" || state == "yes") run();
-}
-
-void Application::showWindow() {
-    print("What do you want to do?");
-    std::cout << "1- Load a document from file\n";
-    std::cout << "2- Load a paragraph to the document\n";
-    std::cout << "3- Print a document words\n";
-    std::cout << "4- Print the words of union of two documents\n";
-    std::cout << "5- Print the words of intersection of documents\n";
-    std::cout << "6- Calculate the similarity of two documents\n";
 }
 
 void Application::loadFromFile() {
@@ -200,4 +204,23 @@ void Application::print(const std::string& paragraph) {
     int width = 200;
     int part = width/2 - paragraph.size()/2;
     std::cout << std::string(part,'-') << ' ' << paragraph << ' ' << std::string(part,'-') << '\n';
+}
+
+void Application::clearDocument() {
+    if(documents.empty()){
+        print(" There aren't any documents until now! ");
+        return;
+    }
+    print("You have (" + std::to_string(this->documents.size()) + ") documents");
+
+    int choice;
+    std::cout << "Enter the number of document to clear its words: ";
+    std::cin >> choice;
+    while (choice < 1 || choice > this->documents.size()){
+        std::cout << "Enter the correct document number: ";
+        std::cin >> choice;
+    }
+
+    this->documents[choice-1].clear();
+    print("Successfully clearing the document number (" + std::to_string(choice) + ")");
 }

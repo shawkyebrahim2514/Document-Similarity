@@ -2,6 +2,7 @@
 #define PROJECT_1_APPLICATION_H
 #include "StringSet.h"
 #include <vector>
+
 class Application {
 private:
     std::vector<StringSet> documents;
@@ -12,10 +13,10 @@ public:
     void loadFromFile();
     void loadFromString();
     void printDocument();
+    void clearDocument();
     void printUnionDocuments();
     void printIntersectDocuments();
     void calculateSimilarity();
 };
-
 
 #endif
