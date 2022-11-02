@@ -7,9 +7,9 @@ class StringSet {
 private:
     std::set<std::string> container;
     void split(const std::string& stringWords);
+    void addString(const std::string& word);
     void consistentString(std::string& word);
     bool isExist(const std::string& word);
-    void addString(const std::string& word);
 public:
     StringSet()= default;
     StringSet(const std::string& stringWords, bool isFile);
@@ -19,7 +19,8 @@ public:
     double computeSimilarity(StringSet& anotherSet);
     StringSet operator+(const StringSet& anotherSet); // the union of these two sets
     StringSet operator*(const StringSet& anotherSet); // the intersection of these two sets
-    StringSet& operator=(const StringSet& anotherSet); // the intersection of these two sets
+    StringSet& operator=(const StringSet& anotherSet);
 };
+
 
 #endif

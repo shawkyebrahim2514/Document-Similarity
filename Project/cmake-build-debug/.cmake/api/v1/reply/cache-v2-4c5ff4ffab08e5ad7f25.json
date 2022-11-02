@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "d:/Github/Document-Similarity/Project/cmake-build-debug"
+			"value" : "d:/FCAI CU/Materials/Second year/First semester/OOP/Personal projects/Document Similarity/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -623,7 +623,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "D:/Github/Document-Similarity/Project"
+			"value" : "D:/FCAI CU/Materials/Second year/First semester/OOP/Personal projects/Document Similarity"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1239,7 +1239,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/Github/Document-Similarity/Project/cmake-build-debug"
+			"value" : "D:/FCAI CU/Materials/Second year/First semester/OOP/Personal projects/Document Similarity/cmake-build-debug"
 		},
 		{
 			"name" : "Project_1_IS_TOP_LEVEL",
@@ -1263,7 +1263,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "D:/Github/Document-Similarity/Project"
+			"value" : "D:/FCAI CU/Materials/Second year/First semester/OOP/Personal projects/Document Similarity"
 		}
 	],
 	"kind" : "cache",

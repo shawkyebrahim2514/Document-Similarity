@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "D:/Github/Document-Similarity/Project/cmake-build-debug",
-		"source" : "D:/Github/Document-Similarity/Project"
+		"build" : "D:/FCAI CU/Materials/Second year/First semester/OOP/Personal projects/Document Similarity/cmake-build-debug",
+		"source" : "D:/FCAI CU/Materials/Second year/First semester/OOP/Personal projects/Document Similarity"
 	},
 	"version" : 
 	{

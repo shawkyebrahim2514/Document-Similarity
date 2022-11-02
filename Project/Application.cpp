@@ -1,19 +1,7 @@
 #include <fstream>
 #include "Application.h"
 
-void Application::showWindow() {
-    print("What do you want to do?");
-    std::cout << "1- Load a document from file\n";
-    std::cout << "2- Load a paragraph to the document\n";
-    std::cout << "3- Print a document words\n";
-    std::cout << "4- Clear a document words\n";
-    std::cout << "5- Print the words of union of two documents\n";
-    std::cout << "6- Print the words of intersection of documents\n";
-    std::cout << "7- Calculate the similarity of two documents\n";
-}
-
-void Application::run() {
-    showWindow();
+void Application::takeChoice() {
     int choice;
     std::cout << "Enter your choice: ";
     std::cin >> choice;
@@ -44,11 +32,33 @@ void Application::run() {
             calculateSimilarity();
             break;
     }
+}
+
+bool Application::continueRunning() {
     std::string state;
     print("Do you want to do more operations?");
-    std::cout << "Enter your choice:";
+    std::cout << "Enter y(yes), n(no): ";
     std::cin >> state;
-    if(state == "y" || state == "yes") run();
+    if(state == "y" || state == "yes") return true;
+    else return false;
+}
+
+
+void Application::run() {
+    showWindow();
+    takeChoice();
+    if(continueRunning()) run();
+}
+
+void Application::showWindow() {
+    print("What do you want to do?");
+    std::cout << "1- Load a document from file\n";
+    std::cout << "2- Load a paragraph to the document\n";
+    std::cout << "3- Print a document words\n";
+    std::cout << "4- Clear a document words\n";
+    std::cout << "5- Print the words of union of two documents\n";
+    std::cout << "6- Print the words of intersection of documents\n";
+    std::cout << "7- Calculate the similarity of two documents\n";
 }
 
 void Application::loadFromFile() {
@@ -127,7 +137,7 @@ void Application::printUnionDocuments() {
     newDocument.print();
 
     print("Do you want to store this document?");
-    std::cout << "Enter your choice: ";
+    std::cout << "Enter y(yes), n(no): ";
     std::string choice;
     std::cin >> choice;
     if(choice == "y" || choice == "yes"){
@@ -164,7 +174,7 @@ void Application::printIntersectDocuments() {
     newDocument.print();
 
     print("Do you want to store this document?");
-    std::cout << "Enter your choice: ";
+    std::cout << "Enter y(yes), n(no): ";
     std::string choice;
     std::cin >> choice;
     if(choice == "y" || choice == "yes"){

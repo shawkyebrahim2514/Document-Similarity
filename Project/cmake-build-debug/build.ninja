@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = D$:/Github/Document-Similarity/Project/cmake-build-debug/
+cmake_ninja_workdir = D$:/FCAI$ CU/Materials/Second$ year/First$ semester/OOP/Personal$ projects/Document$ Similarity/cmake-build-debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target Project_1
 
@@ -49,7 +49,7 @@ cmake_ninja_workdir = D$:/Github/Document-Similarity/Project/cmake-build-debug/
 
 build cmake_object_order_depends_target_Project_1: phony || CMakeFiles/Project_1.dir
 
-build CMakeFiles/Project_1.dir/main.cpp.obj: CXX_COMPILER__Project_1_Debug D$:/Github/Document-Similarity/Project/main.cpp || cmake_object_order_depends_target_Project_1
+build CMakeFiles/Project_1.dir/main.cpp.obj: CXX_COMPILER__Project_1_Debug D$:/FCAI$ CU/Materials/Second$ year/First$ semester/OOP/Personal$ projects/Document$ Similarity/main.cpp || cmake_object_order_depends_target_Project_1
   DEP_FILE = CMakeFiles\Project_1.dir\main.cpp.obj.d
   FLAGS = -g -std=gnu++20
   OBJECT_DIR = CMakeFiles\Project_1.dir
@@ -57,7 +57,7 @@ build CMakeFiles/Project_1.dir/main.cpp.obj: CXX_COMPILER__Project_1_Debug D$:/G
   TARGET_COMPILE_PDB = CMakeFiles\Project_1.dir\
   TARGET_PDB = Project_1.pdb
 
-build CMakeFiles/Project_1.dir/StringSet.cpp.obj: CXX_COMPILER__Project_1_Debug D$:/Github/Document-Similarity/Project/StringSet.cpp || cmake_object_order_depends_target_Project_1
+build CMakeFiles/Project_1.dir/StringSet.cpp.obj: CXX_COMPILER__Project_1_Debug D$:/FCAI$ CU/Materials/Second$ year/First$ semester/OOP/Personal$ projects/Document$ Similarity/StringSet.cpp || cmake_object_order_depends_target_Project_1
   DEP_FILE = CMakeFiles\Project_1.dir\StringSet.cpp.obj.d
   FLAGS = -g -std=gnu++20
   OBJECT_DIR = CMakeFiles\Project_1.dir
@@ -65,7 +65,7 @@ build CMakeFiles/Project_1.dir/StringSet.cpp.obj: CXX_COMPILER__Project_1_Debug 
   TARGET_COMPILE_PDB = CMakeFiles\Project_1.dir\
   TARGET_PDB = Project_1.pdb
 
-build CMakeFiles/Project_1.dir/Application.cpp.obj: CXX_COMPILER__Project_1_Debug D$:/Github/Document-Similarity/Project/Application.cpp || cmake_object_order_depends_target_Project_1
+build CMakeFiles/Project_1.dir/Application.cpp.obj: CXX_COMPILER__Project_1_Debug D$:/FCAI$ CU/Materials/Second$ year/First$ semester/OOP/Personal$ projects/Document$ Similarity/Application.cpp || cmake_object_order_depends_target_Project_1
   DEP_FILE = CMakeFiles\Project_1.dir\Application.cpp.obj.d
   FLAGS = -g -std=gnu++20
   OBJECT_DIR = CMakeFiles\Project_1.dir
@@ -97,7 +97,7 @@ build Project_1.exe: CXX_EXECUTABLE_LINKER__Project_1_Debug CMakeFiles/Project_1
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\Github\Document-Similarity\Project\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "D:\FCAI CU\Materials\Second year\First semester\OOP\Personal projects\Document Similarity\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -108,7 +108,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D D:\Github\Document-Similarity\Project\cmake-build-debug && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SD:\Github\Document-Similarity\Project -BD:\Github\Document-Similarity\Project\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D "D:\FCAI CU\Materials\Second year\First semester\OOP\Personal projects\Document Similarity\cmake-build-debug" && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S"D:\FCAI CU\Materials\Second year\First semester\OOP\Personal projects\Document Similarity" -B"D:\FCAI CU\Materials\Second year\First semester\OOP\Personal projects\Document Similarity\cmake-build-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -126,7 +126,7 @@ build Project_1: phony Project_1.exe
 # =============================================================================
 
 #############################################
-# Folder: D:/Github/Document-Similarity/Project/cmake-build-debug
+# Folder: D:/FCAI CU/Materials/Second year/First semester/OOP/Personal projects/Document Similarity/cmake-build-debug
 
 build all: phony Project_1.exe
 

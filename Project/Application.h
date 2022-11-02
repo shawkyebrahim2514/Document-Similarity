@@ -2,11 +2,12 @@
 #define PROJECT_1_APPLICATION_H
 #include "StringSet.h"
 #include <vector>
-
 class Application {
 private:
     std::vector<StringSet> documents;
     void showWindow();
+    void takeChoice();
+    bool continueRunning();
 public:
     void run();
     void print(const std::string& paragraph);
@@ -18,5 +19,6 @@ public:
     void printIntersectDocuments();
     void calculateSimilarity();
 };
+
 
 #endif
